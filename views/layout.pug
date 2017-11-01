@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title image share
+    link(rel='stylesheet', href='//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .page-header
+      .container
+        .col-md-6
+          //need space
+          h1: a(href='/') image share
+    .container
+      .row
+        .col-sm-8
+          block body
+        .col-sm-4
+          include includes/stats
+          include includes/popular
+          include includes/comments
+    .footer
+      .container
+        .row
+          .col-sm-12.text-center
+            p.text-muted image share | &copy; Copyrights 2017, All Rights reserved
+    //need ''
+    script(src='//cdn.bootcss.com/jquery/3.2.1/jquery.min.js')
